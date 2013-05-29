@@ -13,10 +13,7 @@
 
 $(document).ready(function() {
 
-	$(window).click(function(event) {
-        // grab the pause button class and change the color of it's grandparent,
-        // which is the containing div with title and other contents.
-        $('.pause').parent().parent().css('background-color','#9c9');        
-	});    
+    // add additional styling for pause buttons
+    $('head').append('<style type="text/css">#jukebox .pause { color: red; }</style>');
     
 });
